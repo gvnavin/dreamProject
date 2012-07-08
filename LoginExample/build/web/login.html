@@ -1,0 +1,74 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="scripts/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="scripts/jquery-ui.js"></script>
+        <script type="text/javascript" src="scripts/login.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" media="all" />
+        <link type="text/css" rel="stylesheet" href="css/login.css" media="all" />
+    </head>
+    <body>
+       <form id="login" method="post" action="TestServlet">
+<h1>Log in to your <strong>website.com</strong> account!</h1>
+<p class="register">Not a member? <a href="#" id="create-user">Register here!</a></p>
+<div>
+<label for="login_username">Username</label>
+<input type="text" name="username" id="login_username" class="field required" title="Please provide your username" />
+</div>
+<div>
+<label for="login_password">Password</label>
+<input type="password" name="password" id="login_password" class="field required" title="Password is required" />
+</div>
+<div style="
+display:inline;
+background:#890000;
+font-size:11px;
+text-align:center;
+border-top-width:1px;
+padding:4px;
+position:relative;
+color:white;
+border-top-style:solid;
+border-top-color:#500;
+border-radius:3px;
+margin:.5em 110px;" 
+id="loginFailed">
+</div>
+<p class="forgot"></div><a href="#" id="forgotpass">Forgot your password?</a></p>
+<div class="submit">
+<button type="submit">Log in</button>
+<label>
+<input type="checkbox" name="remember" id="login_remember" value="yes" />Remember my login on this computer
+</label>
+</div>
+</form>
+<div id="dialog-form" title="Create new user">
+<p class="validateTips">All form fields are required.</p>
+<form action="Your Signup Form Action Link Here" method="post">
+<fieldset>
+<label for="name">Name</label>
+<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+<label for="email">Email</label>
+<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+<label for="password">Password</label>
+<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+</fieldset>
+</form>
+</div>
+<div id="dialog-form1" title="Forgote Password">
+<p class="validateTips">Please Enter Valid Email</p>
+<form action="Your Forgote Password Form Action Link Here">
+<fieldset>
+<label for="email">Email</label>
+<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+</fieldset>
+</form>
+</div>
+    </body>
+</html>
